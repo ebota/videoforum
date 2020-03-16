@@ -44,3 +44,5 @@
         <li><a href="rec.php">Gravar Pregunta</a></li>
     </ul>
 </body>
+
+</html>
