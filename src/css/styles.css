@@ -1,0 +1,26 @@
+body{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 30px;
+}
+
+.content{
+    place-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+#login {
+    text-align: center;
+    position: relative;
+    top:20vw;
+    line-height: 2;
+}
+input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
