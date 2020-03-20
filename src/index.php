@@ -20,18 +20,9 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["name"])) {
-            $nameErr = "Quina classe vols veure?";
+            $nameErr = "Has d'indicar el nom de la clase";
             //Si el paràmetre nom de la classe està buit mostrem el formulari
-    ?>
-
-            <div class="content">
-                <form action="./index.php" id="login" method="post">
-                    <label form="name"> Quin videofòrum vols? </label>
-                    <input type="text" id="name" name="name">
-                    <input type="submit" value="Entrar-hi!!!">
-                </form>
-            </div>
-            <?php
+            mostrarFormulari();
         } else {
             //sinó, comprovem que només tingui lletres i números
             $name = test_input($_POST["name"]);
@@ -49,9 +40,24 @@
                     <li><a href="rec.php">Gravar un nou repte?</a></li>
 
                 </ul>
-    <?php
+        <?php
             }
         }
+    } else {
+        //hem arribat directament a la pàgina
+        mostrarFormulari();
+    }
+
+    function mostrarFormulari()
+    {
+        ?> <div class="content">
+            <form action="./index.php" id="login" method="post">
+                <label form="name"> Quin videofòrum vols? </label>
+                <input type="text" id="name" name="name">
+                <input type="submit" value="Entrar-hi!!!">
+            </form>
+        </div>
+    <?php
     }
     //netegem el paràmetre
     function test_input($data)
