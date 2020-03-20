@@ -16,7 +16,7 @@
     <?php
     echo "Test";
     ?>
-    <h1>Record video</h1>
+    <h1>Record video</h1> 
 
 
     <div class="left">
