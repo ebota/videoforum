@@ -37,6 +37,9 @@
             Download
         </a>
     </div>
+    <div id="log">
+        Log:
+    </div>
     <script src="./js/recorder.js"></script>
 </body>
 
