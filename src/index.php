@@ -68,7 +68,7 @@
         return $data;
     }
     ?>
-    <span class="error"><?php echo $nameErr; ?></span>
+     <span class="error"><?php echo $nameErr; ?></span>
 
 </body>
 
